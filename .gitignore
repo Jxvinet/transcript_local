@@ -1,0 +1,36 @@
+# Virtualenv local
+.venv/
+venv/
+__pycache__/
+*.py[cod]
+*.egg-info/
+.eggs/
+dist-python/
+build/
+
+# Modelos / caches descargados
+.cache/
+models/
+*.bin
+
+# Ajustes de maquina (opcional: descomenta si no quieres subir los tuyos)
+# ajustes.ini
+
+# Accesos directos generados
+*.lnk
+
+# OS junk
+Thumbs.db
+Desktop.ini
+.DS_Store
+
+# Editor / IDE
+.vscode/
+.idea/
+*.swp
+*~
+
+# Temporales
+*.tmp
+*.log
+transcripciones_test/
