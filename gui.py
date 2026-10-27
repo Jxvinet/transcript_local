@@ -265,10 +265,6 @@ class App(TkinterDnD.Tk):
             messagebox.showwarning("Ajustes", f"No encuentro {AJUSTES.name}")
             return
         os.startfile(AJUSTES)  # noqa: S606
-        messagebox.showinfo(
-            "Ajustes",
-            "Se abre ajustes.ini. Guarda los cambios y vuelve a abrir el programa para aplicarlos.",
-        )
 
     def _on_close(self) -> None:
         if self._busy:

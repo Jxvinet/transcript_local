@@ -35,8 +35,12 @@ def load_ajustes(path: Path = AJUSTES) -> dict:
         cfg.read_string("[ajustes]\n" + text)
         sec = cfg["ajustes"]
         for key in defaults:
-            if key in sec and str(sec[key]).strip() != "":
-                defaults[key] = str(sec[key]).strip()
+            if key not in sec:
+                continue
+            # idioma/carpeta vacios son validos (auto / Escritorio\Transcripciones)
+            raw = str(sec[key]).strip()
+            if key in ("idioma", "carpeta") or raw != "":
+                defaults[key] = raw
     return defaults
 
 
