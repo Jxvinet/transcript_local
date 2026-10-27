@@ -32,8 +32,8 @@ Todo se guarda en `ajustes.ini` y se lee al abrir:
 También puedes tirar por consola:
 
 ```powershell
-.\transcribir.ps1 "C:\ruta\reunion.mp4"
-.\transcribir.ps1 "C:\ruta\reunion.mp4" -Modelo medium -Formatos "docx,srt"
+.\transcribir.ps1 .\reunion.mp4
+.\transcribir.ps1 .\reunion.mp4 -Modelo medium -Formatos "docx,srt"
 ```
 
 ## Archivos
