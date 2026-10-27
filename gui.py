@@ -52,7 +52,7 @@ class App(TkinterDnD.Tk):
         self.out_dir = default_out_dir(self.ajustes)
         self.out_dir.mkdir(parents=True, exist_ok=True)
 
-        self.title("Transcribir reunión")
+        self.title("transcript_local")
         self.geometry("540x420")
         self.minsize(480, 380)
         self.configure(bg=BG)
@@ -68,7 +68,7 @@ class App(TkinterDnD.Tk):
 
         tk.Label(
             wrap,
-            text="Transcribir reunión",
+            text="transcript_local",
             font=("Segoe UI Semibold", 18),
             fg=INK,
             bg=BG,

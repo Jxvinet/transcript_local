@@ -1,4 +1,4 @@
-# transcribir_reunion
+# transcript_local
 
 Programa para Windows que transcribe vídeo o audio a texto **en tu PC** (sin subir nada a la nube). Usa [faster-whisper](https://github.com/SYSTRAN/faster-whisper) con los modelos de OpenAI Whisper.
 
@@ -10,7 +10,7 @@ Hace falta **Python 3.10+** y **FFmpeg** una sola vez. Después basta con el acc
 
 1. Instala FFmpeg si no lo tienes: `winget install Gyan.FFmpeg` (cierra y abre la terminal después)
 2. En esta carpeta, abre PowerShell y ejecuta: `.\instalar.ps1`
-3. Opcional: `.\crear-acceso.ps1` deja **Transcribir reunion** en el escritorio
+3. Opcional: `.\crear-acceso.ps1` deja **transcript_local** en el escritorio
 4. Abre `iniciar.bat` (o el acceso del escritorio), suelta el archivo y espera
 5. Si quieres cambiar modelo o formatos, pulsa **Ajustes** (edita `ajustes.ini`), guarda y vuelve a abrir el programa
 

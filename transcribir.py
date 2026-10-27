@@ -253,7 +253,7 @@ def main() -> int:
     ajustes = load_ajustes()
     apply_ssl_workaround(ajustes.get("ssl_inseguro", "0") in ("1", "true", "True", "yes"))
 
-    parser = argparse.ArgumentParser(description="Transcribir reunion (Whisper, local)")
+    parser = argparse.ArgumentParser(description="transcript_local (Whisper)")
     parser.add_argument("archivo", help="Ruta al video o audio")
     parser.add_argument("--modelo", default=ajustes["modelo"], help="tiny|base|small|medium|large-v2|large-v3")
     parser.add_argument("--idioma", default=ajustes["idioma"], help="es, en, ... (vacio = auto)")
